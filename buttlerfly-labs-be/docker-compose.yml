@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  butterfly-labs-db:
+    image: mysql
+    ports:
+        - '3306:3306'
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: butterfly
+      MYSQL_USER: butterfly
+      MYSQL_PASSWORD: butterfly
+      MYSQL_DATABASE: butterfly
